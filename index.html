@@ -174,25 +174,30 @@
             <h2>Gallery</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/g2.png" alt="gallery 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/g2.png" alt="gallery 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/g1.png" alt="gallery 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/g1.png" alt="gallery 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/g3.png" alt="gallery 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/g3.png" alt="gallery 1" class="img-fluid gallery-img" />
             </a>
           </div>
           <div class="col-md-3">
             <a href="#">
-              <img src="img/gallery/thumbnail/g4.png" alt="gallery 1" class="img-fluid" />
+              <img src="img/gallery/thumbnail/g4.png" alt="gallery 1" class="img-fluid gallery-img" />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/g5.png" alt="gallery 1" class="img-fluid gallery-img" />
             </a>
           </div>
         </div>
@@ -262,6 +267,13 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      const galleryIage = document.querySelectorAll(",gallery-img");
+
+      galleryImage.forEach((img, i) => {
+        Img.dataset.aos = 'fade-down'
+
+      });
+        
       AOS.init({
         once: true,
       });

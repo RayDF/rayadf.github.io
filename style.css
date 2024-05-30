@@ -18,3 +18,19 @@ section {
 #gallery .row > * {
   padding: 0;
 }
+
+.button-link {
+  display: inline-block; /* Membuat link tampil seperti tombol */
+  background-color: #007bff; /* Warna biru */
+  color: white; /* Warna teks */
+  text-align: center; /* Rata tengah teks */
+  padding: 10px 20px; /* Padding untuk ukuran tombol */
+  font-size: 16px; /* Ukuran teks */
+  text-decoration: none; /* Menghapus garis bawah */
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+  transition: background-color 0.3s; /* Animasi transisi */
+}
+
+.button-link:hover {
+  background-color: #0056b3; /* Warna biru lebih gelap saat hover */
+}
